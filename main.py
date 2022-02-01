@@ -15,7 +15,7 @@ class Settings(object):
     player_size = (33,90)
     player_animations = [
         'idle',
-        'jump',
+        'roundhouse_kick',
         'punsh',
         'lower_punsh',
         'kick',
@@ -153,7 +153,7 @@ class Game():
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    self.player.change_action('jump', False)
+                    self.player.change_action('roundhouse_kick', False)
                 
                 elif event.key == pygame.K_e:
                     self.player.change_action('kick', False)
